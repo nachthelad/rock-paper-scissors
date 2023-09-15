@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Piedra, Papel o Tijera</title>
+  </head>
+  <body>
+    <!-- Player 1 Section -->
+    <div class="player1">
+      <h1>Jugador 1</h1>
+      <form id="player1-form">
+        <label for="player1-name">Nombre:</label>
+        <input type="text" id="player1-name" name="player1-name" /><br /><br />
+
+        <input
+          class="input-style"
+          type="radio"
+          id="player1-choice-rock"
+          name="player1-choice"
+          value="Piedra" />
+        <label for="player1-choice-rock">Piedra</label><br />
+
+        <input
+          class="input-style"
+          type="radio"
+          id="player1-choice-paper"
+          name="player1-choice"
+          value="Papel" />
+        <label for="player1-choice-paper">Papel</label><br />
+
+        <input
+          class="input-style"
+          type="radio"
+          id="player1-choice-scissors"
+          name="player1-choice"
+          value="Tijera" />
+        <label for="player1-choice-scissors">Tijera</label><br /><br />
+
+        <button type="button" id="next-button">Siguiente</button>
+      </form>
+    </div>
+
+    <!-- Player 2 Section -->
+    <div class="player2">
+      <h1>Jugador 2</h1>
+      <form id="player2-form">
+        <label for="player2-name">Nombre:</label>
+        <input type="text" id="player2-name" name="player2-name" /><br /><br />
+
+        <!-- Ejemplo para el jugador 1 -->
+        <input
+          class="input-style"
+          type="radio"
+          id="player2-choice-rock"
+          name="player2-choice"
+          value="Piedra" />
+        <input
+          class="input-style"
+          type="radio"
+          id="player2-choice-paper"
+          name="player2-choice"
+          value="Papel" />
+        <input
+          class="input-style"
+          type="radio"
+          id="player2-choice-scissors"
+          name="player2-choice"
+          value="Tijera" />
+        <label for="player2-choice-rock">Piedra</label><br />
+        <label for="player2-choice-paper">Papel</label><br />
+        <label for="player2-choice-scissors">Tijera</label><br /><br />
+
+        <button type="button" id="play-button">Jugar</button>
+      </form>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results">
+      <h1 id="results">Resultados</h1>
+      <p id="player1-choice-display">El Jugador 1 eligió:</p>
+      <p id="player2-choice-display">El Jugador 2 eligió:</p>
+      <p id="winner-display">Ganador:</p>
+      <button id="playAgainBtn">Volver a jugar</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
