@@ -11,34 +11,36 @@
     <div class="player1">
       <h1>Jugador 1</h1>
       <form id="player1-form">
-        <label for="player1-name">Nombre:</label>
-        <input type="text" id="player1-name" name="player1-name" /><br /><br />
-
-        <input
-          class="input-style"
+        <!-- <label for="player1-name">Nombre:</label> -->
+        <input type="text" id="player1-name" name="player1-name" class="inputName" placeholder="Ingrese un nombre"/>
+        
+        <div class="radioDiv">
+          <input
+          class="input-radio"
           type="radio"
           id="player1-choice-rock"
           name="player1-choice"
           value="Piedra" />
-        <label for="player1-choice-rock">Piedra</label><br />
+        <label for="player1-choice-rock" class="input-label-radio">Piedra</label><br />
 
         <input
-          class="input-style"
+          class="input-radio"
           type="radio"
           id="player1-choice-paper"
           name="player1-choice"
           value="Papel" />
-        <label for="player1-choice-paper">Papel</label><br />
-
-        <input
-          class="input-style"
+          <label for="player1-choice-paper" class="input-label-radio">Papel</label><br />
+          
+          <input
+          class="input-radio"
           type="radio"
           id="player1-choice-scissors"
           name="player1-choice"
           value="Tijera" />
-        <label for="player1-choice-scissors">Tijera</label><br /><br />
+          <label for="player1-choice-scissors" class="input-label-radio">Tijera</label>
+        </div>
 
-        <button type="button" id="next-button">Siguiente</button>
+        <button type="button" id="next-button" class="btn-style">Siguiente</button>
       </form>
     </div>
 
@@ -47,32 +49,33 @@
       <h1>Jugador 2</h1>
       <form id="player2-form">
         <label for="player2-name">Nombre:</label>
-        <input type="text" id="player2-name" name="player2-name" /><br /><br />
+        <input type="text" id="player2-name" name="player2-name" class="inputName" placeholder="Ingrese un nombre"/><br /><br />
 
-        <!-- Ejemplo para el jugador 1 -->
+       <div class="radioDiv">
         <input
-          class="input-style"
+          class="input-radio"
           type="radio"
           id="player2-choice-rock"
           name="player2-choice"
           value="Piedra" />
+          <label for="player2-choice-rock" class="input-label-radio">Piedra</label><br />
         <input
-          class="input-style"
+          class="input-radio"
           type="radio"
           id="player2-choice-paper"
           name="player2-choice"
           value="Papel" />
+          <label for="player2-choice-paper" class="input-label-radio">Papel</label><br />
         <input
-          class="input-style"
+          class="input-radio"
           type="radio"
           id="player2-choice-scissors"
           name="player2-choice"
           value="Tijera" />
-        <label for="player2-choice-rock">Piedra</label><br />
-        <label for="player2-choice-paper">Papel</label><br />
-        <label for="player2-choice-scissors">Tijera</label><br /><br />
+          <label for="player2-choice-scissors" class="input-label-radio">Tijera</label><br /><br />
+          </div>
 
-        <button type="button" id="play-button">Jugar</button>
+        <button type="button" id="play-button" class="btn-style">Jugar</button>
       </form>
     </div>
 
@@ -86,5 +89,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="styleApp.js"></script>
   </body>
 </html>
