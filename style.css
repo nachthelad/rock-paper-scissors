@@ -7,17 +7,22 @@ body {
   font-size: large;
 }
 
-.player1, .player2, #player1-form, #player2-form{
+.player1, .player2, #player1-form, #player2-form, .results{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .inputName {
-    margin-bottom: 20px;
     padding: 10px;
     border-radius: 15px;
     border: 1px solid black;
+}
+
+.alertChoice, .alertName{
+  font-size: 12px;
+  color: red;
+  margin-bottom: 20px;
 }
 
 .radioDiv {
@@ -36,7 +41,6 @@ body {
     line-height: 100%;
     color: white;
     background-color: black;
-    margin-bottom: 20px;
 }
 
 .input-label-radio.disabled {
@@ -61,6 +65,11 @@ body {
     font-size: large;
 }
 
+p{
+  margin-bottom: 13px;
+  margin-top: 2px;
+
+}
 .player2,
 .results {
   display: none;
